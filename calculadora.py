@@ -21,10 +21,10 @@ try:
 
     if resultado is not None:
         # Verifica o tipo do resultado
-        tipe = type(resultado)
-        if tipe == float:
+        tipo_resultado = type(resultado)
+        if tipo_resultado == float:
             print(f'Resultado: {resultado:.3f}')  # Exibe com 3 casas decimais
-        elif tipe == int:
+        elif tipo_resultado == int:
             print(f'Resultado: {resultado:.1f}')  # Exibe com 1 casa decimal
         else:
             print(f'Resultado: {resultado}')  # Exibe o resultado sem formatação específica
